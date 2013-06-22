@@ -1,7 +1,7 @@
 [string.js](http://stringjs.com)
 =========
 
-[![build status](https://secure.travis-ci.org/jprichardson/string.js.png)](http://travis-ci.org/jprichardson/string.js)
+[![Build Status](https://travis-ci.org/yumitsu/string.js.png?branch=rude-russian)](https://travis-ci.org/yumitsu/string.js)
 
 `string.js`, or simply `S` is a lightweight (**< 5 kb** minified and gzipped) JavaScript library for the browser or for Node.js that provides extra String methods. Originally, it modified the String prototype. But I quickly learned that in JavaScript, this is considered poor practice.
 
@@ -28,7 +28,7 @@ Why wasn't I happy with any of them? They are all static methods that don't seem
 Installation
 ------------
 
-    npm install --save string
+    npm install --save string-russian
 
 
 
@@ -45,7 +45,7 @@ Usage
 ### Node.js
 
 ```javascript
-var S = require('string');
+var S = require('string-russian');
 ```
 
 Originally, I was using `$s` but glancing over the code, it was easy to confuse `$s` for string.js with `$` for jQuery. Feel free to use the most convenient variable for you.
@@ -54,7 +54,7 @@ Originally, I was using `$s` but glancing over the code, it was easy to confuse 
 
 ```html
 <!-- HTML5 -->
-<script src="https://raw.github.com/jprichardson/string.js/master/lib/string.min.js"></script>
+<script src="https://raw.github.com/yumitsu/string.js/rude-russian/lib/string.min.js"></script>
 
 <!-- Note that in the mime type for Javascript is now officially 'application/javascript'. If you
 set the type to application/javascript in IE browsers, your Javscript will fail. Just don't set a
@@ -62,7 +62,7 @@ type via the script tag and set the mime type from your server. Most browsers lo
 type anyway -->
 
 <!-- For HTML4/IE -->
-<script type="text/javascript" src="https://raw.github.com/jprichardson/lib/string.js/master/string.min.js"></script>
+<script type="text/javascript" src="https://raw.github.com/yumitsu/string.js/rude-russian/lib/string.min.js"></script>
 ```
 
 A global variable `window.S` or simply `S` is created.
@@ -122,6 +122,19 @@ var sub = 'best scripting';
 var pos = phrase.indexOf(sub);
 console.log(phrase.substr(pos, sub.length).truncate(8)); //best...
 ```
+
+Russian language support
+------------------------
+
+All base methods was tested to make sure Russian lang is supported. If you have trouble using them, please fill out [an issue](https://github.com/yumitsu/string.js/issues).
+
+**Methods added for Russian lang:**
+
+### - isCyrillic()
+
+### - onlyCyrillic()
+
+### - transliterate()
 
 
 Methods
@@ -895,7 +908,6 @@ Example:
 ```javascript
 S.VERSION; //1.0.0
 ```
-
 
 Quirks
 ------

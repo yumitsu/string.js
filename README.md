@@ -128,13 +128,13 @@ Russian language support
 
 All base methods was tested to make sure Russian lang is supported. If you have trouble using them, please fill out [an issue](https://github.com/yumitsu/string.js/issues).
 
-**Methods added for Russian lang:**
+### Methods added for Russian lang:
 
-### - isCyrillic()
+**- isCyrillic()**
 
-### - onlyCyrillic()
+**- onlyCyrillic()**
 
-### - transliterate()
+**- transliterate()**
 
 
 Methods

@@ -61,7 +61,7 @@ Checkout this gem to easily use string.js on the asset pipeline: https://github.
 
 ```html
 <!-- HTML5 -->
-<script src="https://raw.github.com/jprichardson/string.js/master/lib/string.min.js"></script>
+<script src="https://cdn.rawgit.com/jprichardson/string.js/master/lib/string.min.js"></script>
 
 <!-- Note that in the mime type for Javascript is now officially 'application/javascript'. If you
 set the type to application/javascript in IE browsers, your Javscript will fail. Just don't set a
@@ -69,7 +69,7 @@ type via the script tag and set the mime type from your server. Most browsers lo
 type anyway -->
 
 <!-- For HTML4/IE -->
-<script type="text/javascript" src="https://raw.github.com/jprichardson/lib/string.js/master/string.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/jprichardson/string.js/master/lib/string.min.js"></script>
 ```
 
 A global variable `window.S` or simply `S` is created.
@@ -691,6 +691,18 @@ S('wants to change the world').startsWith("politicians"); //false
 ```
 
 
+### - strip([string1],[string2],...) ###
+
+Returns a new string with all occurrences of `[string1],[string2],...` removed.
+
+Example:
+
+```javascript
+S(' 1 2 3--__--4 5 6-7__8__9--0').strip(' ', '_', '-').s; //'1234567890'
+S('can words also be stripped out?').strip('words', 'also', 'be').s; //'can    stripped out?'
+```
+
+
 ### - stripPunctuation()
 
 Strip all of the punctuation.
@@ -1043,6 +1055,8 @@ If you contribute to this library, just modify `string.js`, `string.test.js`, an
 - [3] [Sergio Muriel](https://github.com/Sergio-Muriel)
 - [1] [Matt Hickford](https://github.com/hickford)
 - [1] [Petr Brzek](https://github.com/petrbrzek)
+- [1] [Alex Zinchenko](https://github.com/yumitsu)
+- [1] [Guy Ellis](https://github.com/guyellis)
  
 
 Roadmap to v2.0

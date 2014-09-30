@@ -1,3 +1,11 @@
+2.1.0 / 2014-09-22
+------------------
+- added `strip()` [#115](https://github.com/jprichardson/string.js/pull/115)
+
+2.0.1 / 2014-09-08
+------------------
+- forgot to bump version in actual `string.js` and `string.js.min`
+
 2.0.0 / 2014-09-02
 ------------------
 - bugfix `isAlpha()` for empty strings [#107](https://github.com/jprichardson/string.js/pull/107)
